@@ -46,6 +46,8 @@ norm = np.sqrt(xv**2 + yv**2)
 xv, yv = xv/norm, yv/norm
 ax.quiver(xm, ym, xv, yv, units='xy', angles='xy')
 
+ax.plot(np.pi / 4, 1, 'r.')
+
 plt.xlim([xmin, xmax])
 plt.ylim([ymin, ymax])
 plt.show()
